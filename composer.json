@@ -1,0 +1,13 @@
+{
+  "name": "lkdevelopment/BreadfishAPIClient",
+  "description": "Ein PHP Client um einfach auf die Breadfish OAuth API zuzugreifen",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "lkdevelopment\\": "src/"
+    }
+  },
+  "require": {
+    "namshi/jose": "~6.0"
+  }
+}
