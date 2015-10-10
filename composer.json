@@ -1,5 +1,5 @@
 {
-  "name": "lkdevelopment/BreadfishAPIClient",
+  "name": "lkdevelopment/breadfish-api-client",
   "description": "Ein PHP Client um einfach auf die Breadfish OAuth API zuzugreifen",
   "license": "MIT",
   "autoload": {
