@@ -15,44 +15,47 @@ class BreadfishAPIClient
     /**
      * Aktuelle Cient Version
      */
-    const CLIENT_VERSION = '0.0.1-dev';
+    const CLIENT_VERSION = '0.0.2';
     /**
-     * Berechtigung für Link zum Avatar
+     * Berechtigung fuer Link zum Avatar
      */
     const SCOPE_AVATAR = 'avatar';
     /**
-     * Berechtigung für Registrationsdatum
+     * Berechtigung fuer  Registrationsdatum
      */
     const SCOPE_REGISTRATION = 'registration';
     /**
-     * Berechtigung für Anzahl der Posts
+     * Berechtigung fuer Anzahl der Posts
      */
     const SCOPE_NUM_POSTS = 'num_posts';
     /**
-     * Berechtigung für Anzahl der Bedankungen
+     * Berechtigung fuer Anzahl der Bedankungen
      */
     const SCOPE_THANKS = 'thanks';
     /**
-     * Berechtigung für Banstatus und Bangrund
+     * Berechtigung fuer  Banstatus und Bangrund
      */
     const SCOPE_BAN = 'ban';
     /**
-     * Berechtigung für Anzahl Verwarnungen
+     * Berechtigung fuer Anzahl Verwarnungen
      */
     const SCOPE_WARNINGS = 'warnings';
     /**
-     * Berechtigung für Profilinformationen
+     * Berechtigung fuer Profilinformationen
      */
     const SCOPE_PROFILE_INFORMATION = 'profile_information';
     /**
-     * Berechtigung für E-Mail Adresse
+     * Berechtigung fuer  E-Mail Adresse
      */
     const SCOPE_EMAIL = 'email';
     /**
-     * Berechtigung für Private Nachrichten
+     * Berechtigung fuer Private Nachrichten
      */
     const SCOPE_PRIVATE_MESSAGES = 'private_messages';
-
+    /**
+     * Berechtigung fuer  Details zu Verwarnungen
+     */
+    const SCOPE_WARNINGS_FULL = 'warnings_full';
     /**
      * @var string
      */
@@ -75,6 +78,7 @@ class BreadfishAPIClient
     private $client_url = 'breadfish.de/oauth/index.php';
 
     /**
+     * BreadfishAPIClient constructor.
      * @param string $apiToken
      * @param string $apiPassword
      */
@@ -83,6 +87,7 @@ class BreadfishAPIClient
         $this->apiToken = $apiToken;
         $this->apiPassword = $apiPassword;
     }
+
 
     /**
      * @param array $scopes
